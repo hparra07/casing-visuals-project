@@ -699,7 +699,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 
 .h1, h1 { font-size: 48px; }
-.h2, h2 { font-size: 40px; }
+.h2, h2 { font-size: 4rem }
 .h3, h3 { font-size: 36px; }
 .h4, h4 { font-size: 30px; }
 .h5, h5 { font-size: 26px; }
@@ -1108,6 +1108,7 @@ header.down{
 .about h2{
 	color: #242343;
 	font-weight: 800;
+	font-size: 4rem;
 }
 
 .about h2 span,
@@ -1263,12 +1264,10 @@ header.down{
 }
 
 
-
 .what-we-do{
 	background-image: url('../img/casing-background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 500px;
 	display: flex;
 	justify-content: center;
 }
@@ -1300,32 +1299,117 @@ header.down{
 	background-color: #5d2edf;
 	border-radius: 25px;
 	padding: 12px 20px;
-	margin: auto 60px;
+	margin: 10px 60px;
 }
 
 .what-we-do-services div ul li:hover{
 	background-color: #8d6df2;
 }
 
-.service-1{
+.service-1,
+.service-3{
 	display: flex;
 	justify-content: center
 }
 
-.service-2{
-	display: flex;
-	justify-content: flex-start;
-}
-
-.service-3{
-	display: flex;
-	justify-content: center;
-}
-
+.service-2,
 .service-4{
 	display: flex;
 	justify-content: flex-start;
 }
+
+@media (max-width: 425px) {
+	.what-we-do{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.what-we-do-title h2{
+		font-size: 3rem;
+		display: inline-block;
+		margin: 0px 5px;
+	}
+	.what-we-do-services div ul li{
+		margin: 20px 10px;
+	}
+}
+
+@media (min-width:426px) and (max-width: 768px){
+	.what-we-do{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.what-we-do-title h2{
+		font-size: 5rem;
+		display: inline-block;
+		margin: 0px 5px;
+	}
+	.what-we-do-services div ul li{
+		margin: 20px 10px;
+	}
+	.service-2,
+	.service-4{
+		justify-content: center
+	}
+	
+}
+
+@media (min-width:769px) and (max-width: 1024px){
+	.what-we-do-title h2{
+		font-size: 5rem;
+		margin: 0px 5px;
+	}
+	.what-we-do-services div ul li{
+		margin: 20px 10px;
+	}
+	.service-2,
+	.service-4{
+		justify-content: center
+	}
+	
+}
+
+.show-reel-title{
+	background-color: #FFF;
+    padding: 40px 0px;
+}
+
+.show-reel h2,
+.our-clients {
+	color: #242343;
+	font-weight: 800;
+	font-size: 4rem;
+}
+
+.show-reel h2 span{
+	color: #242343;
+	font-weight: 100;
+}
+
+.show-reel-video{
+	aspect-ratio: 16 / 9;
+}
+
+.show-reel-video iframe{
+	max-width: 100%;
+	height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #242343;
+}
+
+
+
+@media (max-width:375px){
+	.show-reel h2,
+	.about h2,
+	.our-clients h2{
+		font-size: 3rem;
+	}
+}
+
+
 
 
 @media (min-width:769px) and (max-width: 1164px) {
