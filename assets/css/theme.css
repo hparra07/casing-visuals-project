@@ -1246,6 +1246,24 @@ header.down{
 	}
 }
 
+@media (min-width:1440px){
+	.we-make-text{
+		/* width: 95%; */
+		padding: 35px 370px 30px 70px;
+		/* text-align: center; */
+	}
+	.we-make-image img{
+/* 		display: flex;
+		align-items: center;
+		position: inherit;
+		height: auto; */
+		right: 0px;
+    	height: 450px;
+	}
+}
+
+
+
 .what-we-do{
 	background-image: url('../img/casing-background.jpg');
 	background-size: cover;
