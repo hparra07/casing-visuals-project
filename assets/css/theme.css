@@ -1247,7 +1247,7 @@ header.down{
 	}
 }
 
-@media (min-width:1440px){
+@media (min-width:1441px){
 	.we-make-text{
 		/* width: 95%; */
 		padding: 35px 370px 30px 70px;
@@ -1258,7 +1258,7 @@ header.down{
 		align-items: center;
 		position: inherit;
 		height: auto; */
-		right: 0px;
+/* 		right: 0px; */
     	height: 450px;
 	}
 }
