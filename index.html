@@ -13,6 +13,8 @@
 		<link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome-all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
 		<link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css"> <!-- Swiper CSS (https://swiperjs.com/) -->
 		<link rel="stylesheet" href="assets/vendor/lightgallery/css/lightgallery.min.css"> <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
+        <link rel="stylesheet" href="assets/css/magic.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 		<!-- Template master CSS -->
 		<link rel="stylesheet" href="assets/css/helper.css">
@@ -50,13 +52,6 @@
 
     <main id="body-inner">
 
-            <!-- Begin magic cursor 
-			======================== -->
-			<div id="magic-cursor">
-				<div id="ball"></div>
-			</div>
-			<!-- End magic cursor --> 
-
         <!-- Start Hero Section -->
 
         <section class="hero">
@@ -70,7 +65,7 @@
         <section class="tt-section" id="about-us">
             <div class="about">
                 <div class="display-flex tt-justify-content-center tt-column text-center padding-top-60 padding-bottom-60 margin-left-lg-300 margin-right-lg-300 margin-lg-50 margin-sm-50 margin-md-50 section-one">
-                    <h2>About <span>us</span></h2>
+                    <h2 class="aboutAnimation">About <span>us</span></h2>
                     <h3>We are Creative Art Solutions.</h3>
                     <p>A video agency dedicated for more than 12 years to the production and
                         post-production of explainer videos, corporate videos, educational
@@ -80,18 +75,18 @@
                         We have a professional human team and the latest equipment
                         technology. Our clients are all over the world. <span>We are CAS-ING</span></p>
                 </div>
-                <div class="group-1 section-two">
+                <div class="group-1 section-two aboutAnimation">
                     <img src="./assets/img/team/WEB-02.png" alt="team-member" height="150">
                     <img src="./assets/img/team/WEB-03.png" alt="team-member" height="150">
                 </div>
-                <div class="group-2 section-three">
+                <div class="group-2 section-three aboutAnimation">
                     <img src="./assets/img/team/WEB-06.png" alt="team-member" height="150">
                     <img src="./assets/img/team/WEB-05.png" alt="team-member" height="150">
                 </div>
-                <div class="group-3 section-four">
+                <div class="group-3 section-four aboutAnimation">
                     <img src="./assets/img/team/WEB-04.png" alt="team-member" height="150">
                 </div>
-                <div class="group-4 section-five">
+                <div class="group-4 section-five aboutAnimation">
                     <img src="./assets/img/team/WEB-07.png" alt="team-member" height="150">
                 </div>
             </div>
@@ -122,33 +117,33 @@
 
         <section class="tt-section" id="what-we-do">
             <div class="what-we-do padding-top-100 padding-bottom-80">
-                <div class="what-we-do-title margin-lg-50">
+                <div class="what-we-do-title margin-lg-50 services">
                     <h2>What</h2> 
                     <h2>we</h2>
                     <h2>do</h2>
                     <!-- <div></div> -->
                 </div>
                 <div class="what-we-do-services">
-                    <div class="service-1">
-                        <ul>
+                    <div class="service-1 services">
+                        <ul class="">
                             <li>Motion Graphics</li>
                             <li>Social Media Videos</li>
                         </ul>
                     </div>
-                    <div class="service-2">
+                    <div class="service-2 services">
                         <ul>
                             <li>Documentary Video</li>
                             <li>Ads</li>
                             <li>VSL</li>
                         </ul>
                     </div>
-                    <div class="service-3">
+                    <div class="service-3 services">
                         <ul>
                             <li>Online Courses</li>
                             <li>2D Animation</li>
                         </ul>
                     </div>
-                    <div class="service-4">
+                    <div class="service-4 services">
                         <ul>
                             <li>Explainer Videos</li>
                             <li>Storytelling</li>
@@ -261,7 +256,7 @@
         <!-- Start Contact us Section -->
 
         <section class="tt-section" id="contact-us">
-            <div class="display-flex tt-justify-content-center tt-column contact-section">
+            <div class="display-flex tt-justify-content-center tt-column contact-section padding-bottom-80 padding-top-80">
                 <div id="clients">
                     <div class="tt-section-inner tt-wrap ">
                         <div class="contact-us-title">
@@ -272,15 +267,15 @@
 
                             <!-- Begin hidden required fields (https://github.com/agragregra/uniMail) -->
                             <input type="hidden" name="project_name" value="above0.com/business/"> <!-- Change value to your site name -->
-                            <input type="hidden" name="admin_email" value="howard.parra@above0.com"> <!-- Change value to your valid email address (where a message will be sent) -->
-                            <input type="hidden" name="form_subject" value="Message from above0.com/business/"> <!-- Change value to your own message subject -->
+                            <input type="hidden" name="admin_email" value="howard.parra95@gmail.com"> <!-- Change value to your valid email address (where a message will be sent) -->
+                            <input type="hidden" name="form_subject" value="Message from acasing visuals"> <!-- Change value to your own message subject -->
                             <!-- End Hidden Required Fields -->
 
                             <div class="tt-row">
                                 <div class="tt-col-md-6">
 
                                     <div>
-                                        <label>Your Name <span class="required">*</span></label>
+                                        <label><strong>Your Name </strong><span class="required">*</span></label>
                                         <input class="tt-form-control" type="text" name="Name" placeholder="Your Name" required>
                                     </div>
 
@@ -289,23 +284,18 @@
                                 <div class="tt-col-md-6">
 
                                     <div>
-                                        <label>Your Last Name <span class="required">*</span></label>
-                                        <input class="tt-form-control" type="text" name="Name" placeholder="Your Last Name" required>
+                                        <label><strong>Email address </strong><span class="required">*</span></label>
+                                <input class="tt-form-control" type="email" name="Email" placeholder="example@mail.com" required>
                                     </div>
 
                                 </div> <!-- /.tt-col -->
                             </div> <!-- /.tt-row -->
 
-                            <div class="tt-form-group">
-                                <label>Email address <span class="required">*</span></label>
-                                <input class="tt-form-control" type="email" name="Email" placeholder="example@mail.com" required>
-                            </div>
-
                             <div class="tt-row">
                                 <div class="tt-col-md-6">
 
                                     <div>
-                                        <label>City / Country <span class="required">*</span></label>
+                                        <label><strong>City / Country </strong> <span class="required">*</span></label>
                                         <input class="tt-form-control" type="text" name="Name" placeholder="City / Country" required>
                                     </div>
 
@@ -314,7 +304,7 @@
                                 <div class="tt-col-md-6">
 
                                     <div>
-                                        <label>Phone <span class="required">*</span></label>
+                                        <label><strong>Phone </strong><span class="required">*</span></label>
                                         <input class="tt-form-control" type="text" name="Name" placeholder="Ex: +00 123456789" required>
                                     </div>
 
@@ -322,7 +312,7 @@
                             </div> <!-- /.tt-row -->
 
                             <div class="tt-form-group">
-                                <label>"What service are you interested in?" <span class="required">*</span></label>
+                                <label><strong>"What service are you interested in?" </strong><span class="required">*</span></label>
                                 <select class="tt-form-control" name="option" required>
                                     <option value="" disabled selected>Please choose an option</option>
                                     <option value="Option 1">Option 1</option>
@@ -333,8 +323,8 @@
                             </div> 
 
                             <div class="tt-form-group">
-                                <label>Your Comments <span class="required">*</span></label>
-                                <textarea class="tt-form-control" rows="5" name="Message" placeholder="Your Comments " required></textarea>
+                                <label><strong>Your Comments </strong><span class="required">*</span></label>
+                                <textarea class="tt-form-control" rows="5" name="Message" placeholder="Ex: I want to work with you..." required></textarea>
                                 <small class="tt-form-text"><em>Fields marked with an asterisk (*) are required!</em></small>
     
                                 <button type="submit" class="tt-btn tt-btn-primary margin-top-30">
@@ -418,6 +408,7 @@
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/theme.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
