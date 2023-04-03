@@ -323,7 +323,7 @@
                                 <div class="tt-col-md-6">
 
                                     <div class="field">
-                                        <label for="from_name" data-section="contact" data-value="name"><strong>Your Name </strong><span class="required">*</span></label>
+                                        <label for="from_name"><strong data-section="contact" data-value="name">Your Name </strong><span class="required">*</span></label>
                                         <input class="tt-form-control" type="text" name="from_name" id="from_name" placeholder="Your Name" required>
                                     </div>
 
@@ -332,7 +332,7 @@
                                 <div class="tt-col-md-6">
 
                                     <div class="field">
-                                        <label data-section="contact" data-value="email"><strong>Email address </strong><span class="required">*</span></label>
+                                        <label><strong data-section="contact" data-value="email">Email address </strong><span class="required">*</span></label>
                                 <input class="tt-form-control" type="email" name="email_id" id="email_id" placeholder="example@mail.com" required>
                                     </div>
 
@@ -343,7 +343,7 @@
                                 <div class="tt-col-md-6">
 
                                     <div class="field">
-                                        <label for="city" data-section="contact" data-value="city"><strong>City / Country </strong> <span class="required">*</span></label>
+                                        <label for="city"><strong data-section="contact" data-value="city">City / Country </strong> <span class="required">*</span></label>
                                         <input class="tt-form-control" type="text" name="city" id="city" placeholder="City / Country" required>
                                     </div>
 
@@ -352,7 +352,7 @@
                                 <div class="tt-col-md-6">
 
                                     <div class="field">
-                                        <label for="phone" data-section="contact" data-value="phone"><strong>Phone </strong><span class="required">*</span></label>
+                                        <label for="phone"><strong data-section="contact" data-value="phone">Phone </strong><span class="required">*</span></label>
                                         <input class="tt-form-control" type="text" name="phone" id="phone" placeholder="Ex: +00 123456789" required>
                                     </div>
 
@@ -360,18 +360,12 @@
                             </div> <!-- /.tt-row -->
 
                             <div class="tt-form-group field">
-                                <label for="service"><strong>"What service are you interested in?" </strong><span class="required">*</span></label>
-                                <select class="tt-form-control" name="service" id="service" required>
-                                    <option value="" disabled selected>Please choose an option</option>
-                                    <option value="Option 1">Option 1</option>
-                                    <option value="Option 3">Option 3</option>
-                                    <option value="Option 2">Option 2</option>
-                                    <option value="Option 4">Option 4</option>
-                                </select>
+                                <label for="service"><strong data-section="contact" data-value="subject">Contact Reason </strong><span class="required">*</span></label>
+                                <input class="tt-form-control" type="text" name="service" id="service" placeholder="Ex: Work together" required>
                             </div> 
 
                             <div class="tt-form-group field">
-                                <label data-section="contact" data-value="comments"><strong>Your Comments </strong><span class="required">*</span></label>
+                                <label><strong data-section="contact" data-value="comments">Your Comments </strong><span class="required">*</span></label>
                                 <textarea class="tt-form-control" rows="5" name="message" id="message" placeholder="Ex: I want to work with you..." required></textarea>
                                 <small class="tt-form-text"><em>Fields marked with an asterisk (*) are required!</em></small>
     
@@ -406,10 +400,10 @@
             <div class="footer-menu">
                 <div>
                     <ul class="footer-list">
-                        <li class="nav-item"><a href="#about-us" class="nav-link" data-section="menu" data-value="item-uno">About us</a></li>
-                        <li class="nav-item"><a href="#what-we-do" class="nav-link" data-section="menu" data-value="item-dos">What we do</a></li>
-                        <li class="nav-item"><a href="#our-clients" class="nav-link" data-section="menu" data-value="item-tres">Our clients</a></li>
-                        <li class="nav-item"><a href="#contact-us" class="nav-link" data-section="menu" data-value="item-cuatro">Contact us</a></li>
+                        <li><a href="#about-us" class="nav-link" data-section="menu" data-value="item-uno">About us</a></li>
+                        <li><a href="#what-we-do" class="nav-link" data-section="menu" data-value="item-dos">What we do</a></li>
+                        <li><a href="#our-clients" class="nav-link" data-section="menu" data-value="item-tres">Our clients</a></li>
+                        <li><a href="#contact-us" class="nav-link" data-section="menu" data-value="item-cuatro">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="footer-info"> 

@@ -19,12 +19,12 @@
     "contact":{
         "contact-title": "Contact us",
         "contact-subtitle": "Enter your details below.",
-        "name": "Your Name *",
-        "email": "Email address *",
-        "city": "City / Country *",
-        "phone": "Phone *",
-        "subject": "Contact reason *",
-        "comments": "Your Comments *",
+        "name": "Your Name",
+        "email": "Email address",
+        "city": "City / Country",
+        "phone": "Phone",
+        "subject": "Contact reason",
+        "comments": "Your Comments",
         "button": "Send Message",
         "required": "Fields marked with an asterisk (*) are required!"
     },

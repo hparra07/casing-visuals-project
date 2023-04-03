@@ -19,12 +19,12 @@
     "contact":{
         "contact-title": "Contactanos",
         "contact-subtitle": "Ingresa los detalles a continuación.",
-        "name": "Tu nombre *",
-        "email": "Correo electrónico *",
-        "city": "Ciudad/País *",
-        "phone": "Teléfono *",
-        "subject": "Motivo de contacto *",
-        "comments": "Tus comentarios *",
+        "name": "Tu nombre",
+        "email": "Correo electrónico",
+        "city": "Ciudad/País",
+        "phone": "Teléfono",
+        "subject": "Motivo de contacto",
+        "comments": "Tus comentarios",
         "button": "Enviar Mensaje",
         "required": "¡Los campos marcados con un asterisco (*) son obligatorios!"
     },

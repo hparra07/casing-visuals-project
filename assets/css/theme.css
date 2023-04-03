@@ -978,7 +978,7 @@ header.down{
 		margin: 30px 0px;
 	}
 	.nav-logo img{
-		height: 80px;
+		height: 70px;
 	}
 }
 
@@ -1483,6 +1483,9 @@ header.down{
 	.what-we-do-services div ul li{
 		margin: 20px 10px;
 	}
+	.flags{
+		margin-left: 10px;
+	}
 }
 
 @media (min-width:426px) and (max-width: 768px){
@@ -1592,7 +1595,7 @@ header.down{
 .logo-language{
 	width: 25%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 @media (max-width: 1440px){
