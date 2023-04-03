@@ -1,0 +1,37 @@
+{
+    "menu":{
+        "item-uno": "Nosotros",
+        "item-dos": "¿Qué Hacemos?",
+        "item-tres": "Nuestros Clientes",
+        "item-cuatro": "Contactanos"
+    },
+    "about": {
+        "about-title": "Nosotros",
+        "about-subtitle": "Somos Soluciones de Arte Creativo.",
+        "about-description": "Una agencia de video dedicada por más de 12 años a la producción y post-producción de videos explicativos, videos corporativos, videos educativos, gráficos en movimiento, publicidad, cinematografía, videos para comercio electrónico, animación 2D y 3D. <br><br> Contámos con un equipo humano profesional y la última tecnología en equipos. Nuestros clientes están en todo el mundo. Somos CAS-ING."
+    },
+    "david-image":{
+        "image": "./assets/img/avatar.png"
+    },
+    "clients":{
+        "clients-title": "Nuestros clientes"
+    },
+    "contact":{
+        "contact-title": "Contactanos",
+        "contact-subtitle": "Ingresa los detalles a continuación.",
+        "name": "Tu nombre *",
+        "email": "Correo electrónico *",
+        "city": "Ciudad/País *",
+        "phone": "Teléfono *",
+        "subject": "Motivo de contacto *",
+        "comments": "Tus comentarios *",
+        "button": "Enviar Mensaje",
+        "required": "¡Los campos marcados con un asterisco (*) son obligatorios!"
+    },
+    "footer":{
+        "address": "Dirección:",
+        "email": "Correo electrónico:",
+        "web-folio": "Sitio Web:",
+        "rrss": "Síguenos:"
+    }
+}

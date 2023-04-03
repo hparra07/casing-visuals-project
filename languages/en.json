@@ -1,0 +1,37 @@
+{
+    "menu":{
+        "item-uno": "About us",
+        "item-dos": "What we do",
+        "item-tres": "Our clients",
+        "item-cuatro": "Contact us"
+    },
+    "about": {
+        "about-title": "About us",
+        "about-subtitle": "We are Creative Art Solutions.",
+        "about-description": "A video agency dedicated for more than 12 years to the production and post-production of explainer videos, corporate videos, educational videos, motion graphics, advertising, cinematography, e-commerce video, 2D and 3D animation. <br><br> We have a professional human team and the latest equipment technology. Our clients are all over the world. We are CAS-ING"
+    },
+    "david-image":{
+        "image": "./assets/img/avatar.png"
+    },
+    "clients":{
+        "clients-title": "Our clients"
+    },
+    "contact":{
+        "contact-title": "Contact us",
+        "contact-subtitle": "Enter your details below.",
+        "name": "Your Name *",
+        "email": "Email address *",
+        "city": "City / Country *",
+        "phone": "Phone *",
+        "subject": "Contact reason *",
+        "comments": "Your Comments *",
+        "button": "Send Message",
+        "required": "Fields marked with an asterisk (*) are required!"
+    },
+    "footer":{
+        "address": "Addres:",
+        "email": "Email:",
+        "web-folio": "Web Folio:",
+        "rrss": "More Follow Us On Social:"
+    }
+}

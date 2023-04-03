@@ -2913,11 +2913,11 @@
 	// ========================================
 
 	// E-mail Ajax Send
-	$("#tt-contact-form").submit(function() { // Change (your contact form ID)
+/* 	$("#tt-contact-form").submit(function() { // Change (your contact form ID)
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "https://above0.com/business/mail.php", // Change (mail.php path)
+			url: "https://casingvisuals.com/mail.php", // Change (mail.php path)
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you. Your message has been sent!");
@@ -2927,7 +2927,7 @@
 			}, 800);
 		});
 		return false;
-	});
+	}); */
 
 
 

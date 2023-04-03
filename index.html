@@ -15,13 +15,20 @@
 		<link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome-all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
 		<link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css"> <!-- Swiper CSS (https://swiperjs.com/) -->
 		<link rel="stylesheet" href="assets/vendor/lightgallery/css/lightgallery.min.css"> <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
-        <link rel="stylesheet" href="assets/css/magic.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 		<!-- Template master CSS -->
 		<link rel="stylesheet" href="assets/css/helper.css">
 		<link rel="stylesheet" href="assets/css/theme.css">
         <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+        <!-- EmailJs -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            emailjs.init('dk-hMxUN6WVAeWjGj')
+        </script>
+
+        <!-- SweetAlert2 -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <title>Casing Visuals</title>
 </head>
@@ -31,14 +38,32 @@
 
     <header class="">
         <nav class="navbar">
-            <a href="" class="nav-logo">
-                <img src="./assets/img/casing_logov2.png" alt="Casing visual logo">
-            </a>
+            <div class="logo-language">
+                <div>
+                    <a href="" class="nav-logo">
+                        <img src="./assets/img/casing_logov2.png" alt="Casing visual logo">
+                    </a>
+                </div>
+    <!--             <div class="lang">
+                    <span class="en"><img src="./assets/img/usa.png" alt="english"></span>
+                    <label for="checkbox-en"></label>
+                        <input type="checkbox" class="check" id="checkbox-en">
+                    <span class="es"><img src="./assets/img/espana.png" alt="spanish"></span>  
+                </div> -->
+                <div id="flags" class="flags">
+                    <div class="flags-items" data-language="es">
+                        <img src="./assets/img/es.svg" alt="icono españa" class="flags-img">
+                    </div>
+                    <div class="flags-items" data-language="en">
+                        <img src="./assets/img/gb.svg" alt="icono gran bretaña" class="flags-img">
+                    </div>
+                </div>
+            </div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#about-us" class="nav-link">About us</a></li>
-                <li class="nav-item"><a href="#what-we-do" class="nav-link">What we do</a></li>
-                <li class="nav-item"><a href="#our-clients" class="nav-link">Our clients</a></li>
-                <li class="nav-item"><a href="#contact-us" class="nav-link">Contact us</a></li>
+                <li class="nav-item"><a href="#about-us" class="nav-link" data-section="menu" data-value="item-uno">About us</a></li>
+                <li class="nav-item"><a href="#what-we-do" class="nav-link" data-section="menu" data-value="item-dos">What we do</a></li>
+                <li class="nav-item"><a href="#our-clients" class="nav-link" data-section="menu" data-value="item-tres">Our clients</a></li>
+                <li class="nav-item"><a href="#contact-us" class="nav-link" data-section="menu" data-value="item-cuatro">Contact us</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -53,7 +78,7 @@
     <!-- Start Main -->
 
     <main id="body-inner">
-
+        
         <!-- Start Hero Section -->
 
         <section >
@@ -67,9 +92,9 @@
         <section class="tt-section" id="about-us">
             <div class="about">
                 <div class="display-flex tt-justify-content-center tt-column text-center padding-top-60 padding-bottom-60 margin-left-lg-300 margin-right-lg-300 margin-lg-50 margin-sm-50 margin-md-50 section-one">
-                    <h2 class="aboutAnimation">About <span>us</span></h2>
-                    <h3>We are Creative Art Solutions.</h3>
-                    <p>A video agency dedicated for more than 12 years to the production and
+                    <h2 class="aboutAnimation" data-section="about" data-value="about-title">About <span>us</span></h2>
+                    <h3 data-section="about" data-value="about-subtitle">We are Creative Art Solutions.</h3>
+                    <p data-section="about" data-value="about-description">A video agency dedicated for more than 12 years to the production and
                         post-production of explainer videos, corporate videos, educational
                         videos, motion graphics, advertising, cinematography,
                         e-commerce video, 2D and 3D animation.
@@ -100,16 +125,21 @@
 
         <section class="tt-section">
             <div class="we-make">
-                <div class="we-make-text">
-                    <p>
-                        <span>We MAKE Pro and Postproduction We believe in the need for aesthetics in audiovisual pieces.</span>
-                        <br><br>
-                        We believe in beauty and the conceptual as a tool to reach our viewers
-                    </p>
-                </div>
-                <div class="we-make-image">
-                    <img src="./assets/img/we-make-imagev2.png" alt="we-make-image">
-                </div>
+<!--                 <div class="we-make-div">
+                    <div class="we-make-text">
+                        <p>
+                            <span>We MAKE Pro and Postproduction <br>
+                                We believe in the need for aesthetics in audiovisual pieces.</span>
+                            <br><br>
+                            We believe in beauty and the conceptual as a tool to reach our viewers
+                        </p>
+                    </div>
+                    <div class="we-make-image">
+                        <img src="./assets/img/we-make-imagev2.png" alt="we-make-image">
+                    </div>
+                </div> -->
+                <img src="./assets/img/we-make.png" alt="David image" class="we-make-img-david" data-section="david-image" data-value="image">
+                <img src="./assets/img/we-makev2.png" alt="David image" class="we-make-img-davidv2" data-section="david-image" data-value="image">
             </div>
         </section>
 
@@ -179,7 +209,7 @@
             <section class="tt-section" id="our-clients">
                 <div class="our-clients display-flex tt-justify-content-center tt-column text-center">
                     <div class="our-clients-title">
-                        <h2>Our clients</h2>
+                        <h2 data-section="clients" data-value="clients-title">Our clients</h2>
                     </div>
                     <div id="clients">
                         <div class="tt-section-inner tt-wrap">
@@ -262,32 +292,48 @@
                 <div id="clients">
                     <div class="tt-section-inner tt-wrap ">
                         <div class="contact-us-title">
-                            <h2>Contact us</h2>
-                            <h5>Enter your details below.</h5>
+                            <h2 data-section="contact" data-value="contact-title">Contact us</h2>
+                            <h5 data-section="contact" data-value="contact-subtitle">Enter your details below.</h5>
                         </div>
-                        <form id="tt-contact-form" class="tt-form-filled anim-fadeinup">
+                        <form id="form" class="tt-form-filled anim-fadeinup">
+
+<!--                             <form id="form">
+                                <div class="field">
+                                  <label for="from_name">from_name</label>
+                                  <input type="text" name="from_name" id="from_name">
+                                </div>
+                                <div class="field">
+                                  <label for="message">message</label>
+                                  <input type="text" name="message" id="message">
+                                </div>
+                                <div class="field">
+                                  <label for="email_id">email_id</label>
+                                  <input type="text" name="email_id" id="email_id">
+                                </div>
+                                <input type="submit" id="button" value="Send Email" >
+                              </form> -->
 
                             <!-- Begin hidden required fields (https://github.com/agragregra/uniMail) -->
-                            <input type="hidden" name="project_name" value="above0.com/business/"> <!-- Change value to your site name -->
+                            <input type="hidden" name="project_name" value="casingvisuals.com"> <!-- Change value to your site name -->
                             <input type="hidden" name="admin_email" value="howard.parra95@gmail.com"> <!-- Change value to your valid email address (where a message will be sent) -->
-                            <input type="hidden" name="form_subject" value="Message from acasing visuals"> <!-- Change value to your own message subject -->
+                            <input type="hidden" name="form_subject" value="Message from casing visuals"> <!-- Change value to your own message subject -->
                             <!-- End Hidden Required Fields -->
 
                             <div class="tt-row">
                                 <div class="tt-col-md-6">
 
-                                    <div>
-                                        <label><strong>Your Name </strong><span class="required">*</span></label>
-                                        <input class="tt-form-control" type="text" name="Name" placeholder="Your Name" required>
+                                    <div class="field">
+                                        <label for="from_name" data-section="contact" data-value="name"><strong>Your Name </strong><span class="required">*</span></label>
+                                        <input class="tt-form-control" type="text" name="from_name" id="from_name" placeholder="Your Name" required>
                                     </div>
 
                                 </div> <!-- /.tt-col -->
 
                                 <div class="tt-col-md-6">
 
-                                    <div>
-                                        <label><strong>Email address </strong><span class="required">*</span></label>
-                                <input class="tt-form-control" type="email" name="Email" placeholder="example@mail.com" required>
+                                    <div class="field">
+                                        <label data-section="contact" data-value="email"><strong>Email address </strong><span class="required">*</span></label>
+                                <input class="tt-form-control" type="email" name="email_id" id="email_id" placeholder="example@mail.com" required>
                                     </div>
 
                                 </div> <!-- /.tt-col -->
@@ -296,26 +342,26 @@
                             <div class="tt-row">
                                 <div class="tt-col-md-6">
 
-                                    <div>
-                                        <label><strong>City / Country </strong> <span class="required">*</span></label>
-                                        <input class="tt-form-control" type="text" name="Name" placeholder="City / Country" required>
+                                    <div class="field">
+                                        <label for="city" data-section="contact" data-value="city"><strong>City / Country </strong> <span class="required">*</span></label>
+                                        <input class="tt-form-control" type="text" name="city" id="city" placeholder="City / Country" required>
                                     </div>
 
                                 </div> <!-- /.tt-col -->
 
                                 <div class="tt-col-md-6">
 
-                                    <div>
-                                        <label><strong>Phone </strong><span class="required">*</span></label>
-                                        <input class="tt-form-control" type="text" name="Name" placeholder="Ex: +00 123456789" required>
+                                    <div class="field">
+                                        <label for="phone" data-section="contact" data-value="phone"><strong>Phone </strong><span class="required">*</span></label>
+                                        <input class="tt-form-control" type="text" name="phone" id="phone" placeholder="Ex: +00 123456789" required>
                                     </div>
 
                                 </div> <!-- /.tt-col -->
                             </div> <!-- /.tt-row -->
 
-                            <div class="tt-form-group">
-                                <label><strong>"What service are you interested in?" </strong><span class="required">*</span></label>
-                                <select class="tt-form-control" name="option" required>
+                            <div class="tt-form-group field">
+                                <label for="service"><strong>"What service are you interested in?" </strong><span class="required">*</span></label>
+                                <select class="tt-form-control" name="service" id="service" required>
                                     <option value="" disabled selected>Please choose an option</option>
                                     <option value="Option 1">Option 1</option>
                                     <option value="Option 3">Option 3</option>
@@ -324,13 +370,13 @@
                                 </select>
                             </div> 
 
-                            <div class="tt-form-group">
-                                <label><strong>Your Comments </strong><span class="required">*</span></label>
-                                <textarea class="tt-form-control" rows="5" name="Message" placeholder="Ex: I want to work with you..." required></textarea>
+                            <div class="tt-form-group field">
+                                <label data-section="contact" data-value="comments"><strong>Your Comments </strong><span class="required">*</span></label>
+                                <textarea class="tt-form-control" rows="5" name="message" id="message" placeholder="Ex: I want to work with you..." required></textarea>
                                 <small class="tt-form-text"><em>Fields marked with an asterisk (*) are required!</em></small>
     
-                                <button type="submit" class="tt-btn tt-btn-primary margin-top-30">
-                                    <div data-hover="Send Message">Send Message</div>
+                                <button type="submit" id="button" class="tt-btn tt-btn-primary margin-top-30" on:click={showAlert}>
+                                    <div data-hover="Send Message" data-section="contact" data-value="button">Send Message</div>
                                     <span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
                                 </button>
                             </div>
@@ -360,33 +406,41 @@
             <div class="footer-menu">
                 <div>
                     <ul class="footer-list">
-                        <li><a href="" class="nav-link">About us</a></li>
-                        <li><a href="" class="nav-link">What we do</a></li>
-                        <li><a href="" class="nav-link">Our clients</a></li>
-                        <li><a href="" class="nav-link">Contact us</a></li>
+                        <li class="nav-item"><a href="#about-us" class="nav-link" data-section="menu" data-value="item-uno">About us</a></li>
+                        <li class="nav-item"><a href="#what-we-do" class="nav-link" data-section="menu" data-value="item-dos">What we do</a></li>
+                        <li class="nav-item"><a href="#our-clients" class="nav-link" data-section="menu" data-value="item-tres">Our clients</a></li>
+                        <li class="nav-item"><a href="#contact-us" class="nav-link" data-section="menu" data-value="item-cuatro">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="footer-info"> 
-                    <div>
+                    <div> 
                         <ul>
                             <li>
-                                <img src="./assets/img/location.png" alt="" height="60">
-                                Address: <br>
-                                Biz Address, State, City, 1234
+                                <img src="./assets/img/location.png" alt="location icon" height="60">
+                                <span data-section="footer" data-value="address">Address:</span> <br>
+                                571 Briarwood Terrace <br>
+                                Ventura, CA, United States <br>
+                                93001
+                                <br><br>
+                                Sanchez de Bustamante 2351 <br>
+                                Buenos Aires - Argentina <br>
+                                CP1425
                             </li>
                             <li>
-                                <img src="./assets/img/email.png" alt="" height="60">
-                                Email: <br>
-                                name@yourmail.com
+                                <img src="./assets/img/email.png" alt="email icon" height="60">
+                                <span data-section="footer" data-value="email">Email:</span> <br>
+                                <a href="mailto:info@casingvisuals.com" target="_blank" style="display: contents;">info@casingvisuals.com</a>
+                                
                             </li>
                         </ul>
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <img src="./assets/img/web.png" alt="" height="60">
-                                Web Folio: <br>
-                                www.yourdomain.com
+                                <img src="./assets/img/web.png" alt="web icon" height="60">
+                                <span data-section="footer" data-value="web-folio">Web Folio:</span>  <br>
+                                <a href="www.casingvisuals.com" target="_blank" style="display: contents;">www.casingvisuals.com</a>
+                                
                             </li>
 <!--                             <li>
                                 <img src="./assets/img/phone.png" alt="" height="60">
@@ -398,9 +452,12 @@
                 </div>
             </div>
             <div class="footer-rrss">
-                <p>More Follow Us On Social:</p>
-                <img src="./assets/img/ig.png" alt="" height="60">
-                <img src="./assets/img/linkedin.png" alt="" height="60">
+                <p data-section="footer" data-value="rrss">More Follow Us On Social:</p>
+                <div>
+                    <a href="" target="_blank"><img src="./assets/img/ig.png" alt="instagram logo" height="60"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100090935710790&mibextid=LQQJ4d" target="_blank"><img src="./assets/img/facebook.png" alt="facebook logo" height="60"></a>
+                    <a href="https://www.linkedin.com/company/casing-visuals/" target="_blank"><img src="./assets/img/linkedin.png" alt="linkedin logo" height="60"></a>
+                </div>
             </div>
         </div>
     </footer>

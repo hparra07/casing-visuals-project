@@ -1,4 +1,41 @@
 
+/* LANGUAGE MODE */
+
+/* let check=document.querySelector('.check');
+
+check.addEventListener('click', language);
+
+function language(){
+    let id = check.checked;
+
+    if (id == true){
+        location.href="./es/index.html";
+    }else{
+        location.href="../index.html"
+    }
+} */
+
+const flagsElement = document.getElementById('flags');
+
+const textsToChange = document.querySelectorAll('[data-section]');
+
+const changeLanguage = async (language) => {
+    const requestJson = await fetch(`./languages/${language}.json`);
+    const texts = await requestJson.json();
+
+    for(const textToChange of textsToChange){
+        const section = textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+
+        textToChange.innerHTML = texts[section][value];
+    }
+}
+
+flagsElement.addEventListener('click', (e) => {
+    changeLanguage(e.target.parentElement.dataset.language);
+});
+
+/* SCROLL NAVBAR */
 window.addEventListener('scroll', function (){
     
     let header = document.querySelector('header');
@@ -22,6 +59,8 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     navMenu.classList.remove('active');
 }))
 
+
+/* ANIMATIONS */
 const observer = new IntersectionObserver(entries =>{
     entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -49,3 +88,33 @@ const observerAbout = new IntersectionObserver(entries =>{
 })
 
 observerAbout.observe(document.querySelector('.about'))
+
+/* FORM ACTTION */
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_bkr5x23';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Send Email';
+                showAlert()
+            }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
+    });
+
+/* ALERT BUTTON */
+    
+const showAlert = () => {
+    Swal.fire('Succes', 'Your email has been sent', 'success');
+}
+
