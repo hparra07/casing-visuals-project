@@ -1596,6 +1596,7 @@ header.down{
 	width: 25%;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 }
 
 @media (max-width: 1440px){
@@ -1605,58 +1606,8 @@ header.down{
 	}
 }
 
-/* .en:hover{
-    color: pink;
-    cursor: pointer;
-}
 
-.es:hover{
-    color: pink;
-    cursor: pointer;
-} 
-
-.check{
-    position: relative;
-    width: 50px;
-    cursor: pointer;
-    margin: 0px 5px; 
-	height: min-content;    
-}
-
-.check:before{
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 25px;
-    background: #333;
-    border-radius: 25px;
-}
-
-.check:after{
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background: #fff;
-    border-radius: 25px;
-    border: 2px solid #333;
-    box-sizing: border-box;
-}
-
-.check:checked:after{
-    left: 25px;
-    border: 2px solid #333;
-}
-
-.check:checked:before{
-    background: rgb(77, 189, 77);
-}   
-
-.lang{
-    display: flex;
-}*/
-
-.flags{
+/* .flags{
 	width: 75px;
 	display: flex;
 	align-items: center;
@@ -1670,7 +1621,7 @@ header.down{
 .flags-img{
 	display: block;
 	cursor: pointer;
-}
+} */
 
 #tt-header {
 	position: absolute;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +19,7 @@
 		<!-- Template master CSS -->
 		<link rel="stylesheet" href="../assets/css/helper.css">
 		<link rel="stylesheet" href="../assets/css/theme.css">
+		<link rel="stylesheet" href="../css/styles.css">
         <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 
         <!-- EmailJs -->
@@ -38,20 +39,35 @@
 
     <header class="">
         <nav class="navbar">
-            <a href="" class="nav-logo">
-                <img src="../assets/img/casing_logov2.png" alt="Casing visual logo">
-            </a>
-            <div class="lang">
-                <span class="en"><img src="../assets/img/usa.png" alt="english"></span>
-                <label for="checkbox-en"></label>
-                    <input type="checkbox" class="check" id="checkbox-en">
-                <span class="es"><img src="../assets/img/espana.png" alt="spanish"></span>  
+            <div class="logo-language">
+                <div>
+                    <a href="" class="nav-logo">
+                        <img src="../assets/img/casing_logov2.png" alt="Casing visual logo">
+                    </a>
+                </div>
+                <div class="lang">
+<!--                     <span class="en">english</span>
+                    <input type="checkbox" class="check" checked>
+                    <span class="es">spanish</span> -->
+                    <span class="en"><img src="../assets/img/gb.svg" alt="spanish"></span>
+                    <label for="checkbox-en"></label>
+                        <input type="checkbox" class="check" checked>
+                        <span class="es"><img src="../assets/img/es.svg" alt="english"></span>
+                </div>
+<!--                 <div id="flags" class="flags">
+                    <div class="flags-items" data-language="es">
+                        <img src="./assets/img/es.svg" alt="icono españa" class="flags-img">
+                    </div>
+                    <div class="flags-items" data-language="en">
+                        <img src="./assets/img/gb.svg" alt="icono gran bretaña" class="flags-img">
+                    </div>
+                </div> -->
             </div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#about-us" class="nav-link">About us</a></li>
-                <li class="nav-item"><a href="#what-we-do" class="nav-link">What we do</a></li>
-                <li class="nav-item"><a href="#our-clients" class="nav-link">Our clients</a></li>
-                <li class="nav-item"><a href="#contact-us" class="nav-link">Contact us</a></li>
+                <li class="nav-item"><a href="#about-us" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#what-we-do" class="nav-link">¿Qué hacemos?</a></li>
+                <li class="nav-item"><a href="#our-clients" class="nav-link">Nuestros clientes</a></li>
+                <li class="nav-item"><a href="#contact-us" class="nav-link">Contáctanos</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -80,15 +96,12 @@
         <section class="tt-section" id="about-us">
             <div class="about">
                 <div class="display-flex tt-justify-content-center tt-column text-center padding-top-60 padding-bottom-60 margin-left-lg-300 margin-right-lg-300 margin-lg-50 margin-sm-50 margin-md-50 section-one">
-                    <h2 class="aboutAnimation">About <span>us</span></h2>
-                    <h3>We are Creative Art Solutions.</h3>
-                    <p>A video agency dedicated for more than 12 years to the production and
-                        post-production of explainer videos, corporate videos, educational
-                        videos, motion graphics, advertising, cinematography,
-                        e-commerce video, 2D and 3D animation.
+                    <h2 class="aboutAnimation">Nosotros</h2>
+                    <h3>Somos Soluciones de Arte Creativo.</h3>
+                    <p>Una agencia de video dedicada por más de 12 años a la producción y post-producción de videos explicativos, videos corporativos, videos educativos, gráficos en movimiento, publicidad, cinematografía, videos para comercio electrónico, animación 2D y 3D. 
                         <br><br>
-                        We have a professional human team and the latest equipment
-                        technology. Our clients are all over the world. <span>We are CAS-ING</span></p>
+                        Contámos con un equipo humano profesional y la última tecnología en equipos. Nuestros clientes están en todo el mundo. <span>Somos CAS-ING.</span> 
+                    </p>
                 </div>
                 <div class="group-1 section-two aboutAnimation">
                     <img src="../assets/img/team/WEB-02.png" alt="team-member" height="150">
@@ -126,8 +139,8 @@
                         <img src="./img/we-make-imagev2.png" alt="we-make-image">
                     </div>
                 </div> -->
-                <img src="../assets/img/we-make.png" alt="David image" class="we-make-img-david">
-                <img src="../assets/img/we-makev2.png" alt="David image" class="we-make-img-davidv2">
+                <img src="../assets/img/we-make-es.png" alt="David image" class="we-make-img-david">
+                <img src="../assets/img/we-makev2-es.png" alt="David image" class="we-make-img-davidv2">
             </div>
         </section>
 
@@ -138,9 +151,8 @@
         <section class="tt-section" id="what-we-do">
             <div class="what-we-do padding-top-100 padding-bottom-80">
                 <div class="what-we-do-title margin-lg-50 services">
-                    <h2>What</h2> 
-                    <h2>we</h2>
-                    <h2>do</h2>
+                    <h2>Que</h2> 
+                    <h2>hacemos</h2>
                     <!-- <div></div> -->
                 </div>
                 <div class="what-we-do-services">
@@ -197,7 +209,7 @@
             <section class="tt-section" id="our-clients">
                 <div class="our-clients display-flex tt-justify-content-center tt-column text-center">
                     <div class="our-clients-title">
-                        <h2>Our clients</h2>
+                        <h2>Nuestros clientes</h2>
                     </div>
                     <div id="clients">
                         <div class="tt-section-inner tt-wrap">
@@ -280,8 +292,8 @@
                 <div id="clients">
                     <div class="tt-section-inner tt-wrap ">
                         <div class="contact-us-title">
-                            <h2>Contact us</h2>
-                            <h5>Enter your details below.</h5>
+                            <h2>Contáctanos</h2>
+                            <h5>Ingresa los detalles a continuación.</h5>
                         </div>
                         <form id="form" class="tt-form-filled anim-fadeinup">
 
@@ -311,8 +323,8 @@
                                 <div class="tt-col-md-6">
 
                                     <div class="field">
-                                        <label for="from_name"><strong>Your Name </strong><span class="required">*</span></label>
-                                        <input class="tt-form-control" type="text" name="from_name" id="from_name" placeholder="Your Name" required>
+                                        <label for="from_name"><strong>Tu nombre </strong><span class="required">*</span></label>
+                                        <input class="tt-form-control" type="text" name="from_name" id="from_name" placeholder="Tu nombre" required>
                                     </div>
 
                                 </div> <!-- /.tt-col -->
@@ -320,7 +332,7 @@
                                 <div class="tt-col-md-6">
 
                                     <div class="field">
-                                        <label><strong>Email address </strong><span class="required">*</span></label>
+                                        <label><strong>Correo electrónico</strong><span class="required">*</span></label>
                                 <input class="tt-form-control" type="email" name="email_id" id="email_id" placeholder="example@mail.com" required>
                                     </div>
 
@@ -331,8 +343,8 @@
                                 <div class="tt-col-md-6">
 
                                     <div class="field">
-                                        <label for="city"><strong>City / Country </strong> <span class="required">*</span></label>
-                                        <input class="tt-form-control" type="text" name="city" id="city" placeholder="City / Country" required>
+                                        <label for="city"><strong>Ciudad / País </strong> <span class="required">*</span></label>
+                                        <input class="tt-form-control" type="text" name="city" id="city" placeholder="Ciudad / País" required>
                                     </div>
 
                                 </div> <!-- /.tt-col -->
@@ -340,31 +352,25 @@
                                 <div class="tt-col-md-6">
 
                                     <div class="field">
-                                        <label for="phone"><strong>Phone </strong><span class="required">*</span></label>
-                                        <input class="tt-form-control" type="text" name="phone" id="phone" placeholder="Ex: +00 123456789" required>
+                                        <label for="phone"><strong>Teléfono </strong><span class="required">*</span></label>
+                                        <input class="tt-form-control" type="text" name="phone" id="phone" placeholder="Ej: +00 123456789" required>
                                     </div>
 
                                 </div> <!-- /.tt-col -->
                             </div> <!-- /.tt-row -->
 
                             <div class="tt-form-group field">
-                                <label for="service"><strong>"What service are you interested in?" </strong><span class="required">*</span></label>
-                                <select class="tt-form-control" name="service" id="service" required>
-                                    <option value="" disabled selected>Please choose an option</option>
-                                    <option value="Option 1">Option 1</option>
-                                    <option value="Option 3">Option 3</option>
-                                    <option value="Option 2">Option 2</option>
-                                    <option value="Option 4">Option 4</option>
-                                </select>
+                                <label for="service"><strong data-section="contact" data-value="subject">Motivo de contacto </strong><span class="required">*</span></label>
+                                <input class="tt-form-control" type="text" name="service" id="service" placeholder="Ej: Trabajar juntos" required>
                             </div> 
 
                             <div class="tt-form-group field">
                                 <label><strong>Your Comments </strong><span class="required">*</span></label>
-                                <textarea class="tt-form-control" rows="5" name="message" id="message" placeholder="Ex: I want to work with you..." required></textarea>
-                                <small class="tt-form-text"><em>Fields marked with an asterisk (*) are required!</em></small>
+                                <textarea class="tt-form-control" rows="5" name="message" id="message" placeholder="Ej: Me gustaría trabajar con ustedes..." required></textarea>
+                                <small class="tt-form-text"><em>¡Los campos marcados con un asterisco (*) son obligatorios!</em></small>
     
                                 <button type="submit" id="button" class="tt-btn tt-btn-primary margin-top-30" on:click={showAlert}>
-                                    <div data-hover="Send Message">Send Message</div>
+                                    <div data-hover="Enviar Mensaje">Enviar Mensaje</div>
                                     <span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
                                 </button>
                             </div>
@@ -394,10 +400,10 @@
             <div class="footer-menu">
                 <div>
                     <ul class="footer-list">
-                        <li><a href="#about-us" class="nav-link">About us</a></li>
-                        <li><a href="#what-we-do" class="nav-link">What we do</a></li>
-                        <li><a href="#our-clients" class="nav-link">Our clients</a></li>
-                        <li><a href="#contact-us" class="nav-link">Contact us</a></li>
+                        <li><a href="#about-us" class="nav-link">Nosotros</a></li>
+                        <li><a href="#what-we-do" class="nav-link">¿Qué hacemos?</a></li>
+                        <li><a href="#our-clients" class="nav-link">Nuestros clientes</a></li>
+                        <li><a href="#contact-us" class="nav-link">Contáctanos</a></li>
                     </ul>
                 </div>
                 <div class="footer-info"> 
@@ -405,7 +411,7 @@
                         <ul>
                             <li>
                                 <img src="../assets/img/location.png" alt="location icon" height="60">
-                                Address: <br>
+                                Dirección: <br>
                                 571 Briarwood Terrace <br>
                                 Ventura, CA, United States <br>
                                 93001
@@ -440,7 +446,7 @@
                 </div>
             </div>
             <div class="footer-rrss">
-                <p>More Follow Us On Social:</p>
+                <p>Síguenos:</p>
                 <div>
                     <a href="" target="_blank"><img src="../assets/img/ig.png" alt="instagram logo" height="60"></a>
                     <a href="https://www.facebook.com/profile.php?id=100090935710790&mibextid=LQQJ4d" target="_blank"><img src="../assets/img/facebook.png" alt="facebook logo" height="60"></a>
@@ -454,6 +460,7 @@
 
     <script src="../assets/js/app.js"></script>
     <script src="../assets/js/theme.js"></script>
+    <script src="../js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
