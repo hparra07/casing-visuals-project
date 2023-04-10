@@ -1,0 +1,210 @@
+.check{
+    position: relative;
+    width: 50px;
+/*     cursor: pointer;
+    margin: 0px 5px;  */
+	height: min-content; 
+    margin-top: 5px;   
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #333;
+}
+
+.check:checked:before{
+    background: rgb(77, 189, 77);
+}   
+
+.lang{
+    display: flex; 
+    position: fixed;
+    top: 250px;
+    right: 0;
+/*     background-color: #242343; */
+    border-radius: 20px;
+}
+
+.modes{
+    display: flex;
+    position: fixed;
+    top: 300px;
+    right: 0;
+    border-radius: 20px;
+}
+
+/* .lang img{
+    margin-top: 7px;
+} */
+
+.en,
+.es{
+    margin: auto 5px;
+    width: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+/* .en, img,
+.es img{
+    margin-top: 3px;
+} */
+
+/* DARK MODE */
+
+.mode{
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(20px);
+}
+
+.checkboxMode{
+    opacity: 0;
+    position: absolute;
+}
+
+.checkboxMode:checked + .label .ball{
+    transform: translateX(20px);
+}
+
+.label{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;   
+    padding: 5px;
+    border-radius: 25px;
+    height: 25px;
+    width: 50px;
+}
+
+.ball{
+    background-color: white;
+    position: absolute;
+    border-radius: 50px;
+    top: 2px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    transition: linear 0.2s;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+
+.mode1{
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+.checkboxLang{
+    opacity: 0;
+    position: absolute;
+}
+
+.checkboxLang:checked + .label1 .ball1{
+    transform: translateX(24px);
+}
+
+.label1{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;   
+    padding: 5px;
+    border-radius: 25px;
+    height: 25px;
+    width: 50px;
+}
+
+.ball1{
+    background-color: white;
+    position: absolute;
+    border-radius: 50px;
+    top: 2px;
+    left: 2px;
+    height: 20px;
+    width: 20px;
+    transition: linear 0.2s;
+}
+
+body.light{
+    background-color: black; 
+}
+
+body.light header{
+    background-color: #121212; 
+}
+
+body.light header.down{
+	background-color: rgb(10 10 10 / 50%);
+	padding: 15px 0px;
+}
+
+body.light .nav-item:last-child{
+	background-color: #3e3d42;
+}
+
+body.light .nav-item:last-child:hover{
+	background-color: #28282b;
+}
+
+@media (max-width: 768px){
+    body.light .nav-menu{
+        background-color: #121212;
+    } 
+    
+    body.light .nav-menu.down{
+        background-color: rgb(10 10 10 / 50%);
+    }
+}
+
+
+body.light .about h2,
+body.light .about h2 span,
+body.light .about h3,
+body.light .about p,
+body.light .about p span{
+    color: white;
+}
